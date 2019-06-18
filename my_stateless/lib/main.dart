@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main(){
-  var app = MaterialApp(
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
     title: 'Flutter App',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
@@ -22,7 +24,7 @@ void main(){
             RaisedButton(
               onPressed: (){},
               splashColor: Colors.orangeAccent,
-              child: Text('Login'),
+              child: Text('Signup'),
               color: Colors.blueAccent,
             ),
           ],
@@ -37,5 +39,9 @@ void main(){
       ),
     ),
   );
-  runApp(app);
+  }
+}
+
+void main(){
+  runApp(MyApp());
 }
