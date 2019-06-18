@@ -12,6 +12,15 @@ void main(){
       appBar: AppBar(
         title: Text('Flutter App'),
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Plain Text'),
+            Text('Plain Text 2')
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child: Icon(
