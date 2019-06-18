@@ -14,10 +14,17 @@ void main(){
       ),
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Plain Text'),
-            Text('Plain Text 2')
+            Text('Plain Text 2'),
+            RaisedButton(
+              onPressed: (){},
+              splashColor: Colors.orangeAccent,
+              child: Text('Login'),
+              color: Colors.blueAccent,
+            ),
           ],
         ),
       ),
